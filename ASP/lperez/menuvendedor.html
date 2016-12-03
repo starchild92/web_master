@@ -1,0 +1,20 @@
+<!--#include file="conex.asp"-->
+<link rel="stylesheet" type="text/css" href="css/ccsmenu.css"/>
+<%
+		login = session("login")
+		wsql = "select * from usuarios where idusuario=" &login
+		set rs = con.execute(wsql)
+%>
+<div id='cssmenu'>
+<ul>
+    <li class='active'><a href='#'><span><% =rs("nombre") %></span></a>
+		<ul>
+    		<li class='active'><a href='index.asp?pag=modinformacion'><span>Modificar Información</span></a></li>
+		</ul>
+	</li>
+    <li class='active'><a href='index.asp?pag=fproducto'><span>Producto</span></a></li>
+	<li class="active"><a href='index.asp?pag=categorias'><span>Categoria</span></a></li>
+	<li class='active'><a href='index.asp?pag=preguntas'><span>Mensajes</span></a></li>
+    <li class='active'><a href='cerrar.asp'><span>Cerrar Sesión</span></a></li>
+</ul>
+</div>

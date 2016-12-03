@@ -1,0 +1,36 @@
+#cssmenu2 {
+list-style: none;
+width: 150px;
+padding-top: 35px;
+mine-height: 125px;
+padding-left: 50px;
+background: url(background.png) no-repeat;
+}
+#cssmenu2 ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#cssmenu2 a:link{
+color: #000;
+font-family: Roboto;
+font-size: 16px;
+height: 23px;
+display:block;
+text-decoration: none;
+padding: 8px 0 0 0px;
+font-weight:normal;
+}
+
+#cssmenu2 a:visited{
+text-decoration: line-through;
+}
+
+#cssmenu2 a:hover{
+color: #333;
+}
+
+#cssmenu2 a:active{
+color: #000;
+}
